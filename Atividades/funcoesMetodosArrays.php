@@ -23,10 +23,7 @@ echo $calc->soma(3, 4); // 7
 $frutas = ["maçã", "banana", "laranja"];
 
 // Arrays Associativos: Coleções de pares chave-valor.
-$idade = [
-    "João" => 25, 
-    "Maria" => 22
-];
+$idade = ["João" => 25, "Maria" => 22];
 
 // Arrays Multidimensionais: Arrays que contêm outros arrays.
 $matriz = [
