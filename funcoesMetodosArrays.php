@@ -7,6 +7,12 @@ function soma($a, $b) {
 }
 echo soma(3, 4); // 7
 
+// Especificação dos retornos na função
+// A var $a é int e $b é string, e a function retorna um boolean
+function subtração(int $a, string $b): bool {
+    return $a + $b;
+}
+
 
 //Métodos: Funções que pertencem a classes (utilizados em Programação Orientada a Objetos).
 class Calculadora {
