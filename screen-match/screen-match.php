@@ -1,7 +1,7 @@
 <?php
 
-// é uma constante que retorna o diretório do arquivo onde é usada. Útil quando precisar de um caminho absoluto.
-require __DIR__ . "funcoes.php";
+// DIR é uma constante que retorna o diretório do arquivo onde é usada. Útil quando precisar de um caminho absoluto.
+require __DIR__ . "/funcoes.php";
 
 echo "Bem-vindo(a) ao screen match!\n";
 
@@ -45,3 +45,7 @@ $filme = [
 
 
 echo $filme["ano"];
+
+$filmeComoStringJson = json_encode($filme);
+// Funcão que insere conteúdo em um arquivo
+file_put_contents(__DIR__ . '/filme.json', $filmeComoStingJson);
