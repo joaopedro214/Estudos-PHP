@@ -56,7 +56,7 @@ class Filme {
 
 // Se adicionarmos a palavra reservada "readonly" podemos retirar o modificador de acesso "public".
 class Filme2 {
-    
+    // Não precisa por nada aqui.
     public function __construct(
         public readonly string $nome, 
         public readonly int $anoLancamento, 

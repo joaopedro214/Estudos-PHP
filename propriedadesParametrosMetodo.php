@@ -47,6 +47,29 @@ class Calculadora {
     }
 }
 
+// Instância: é um objeto criado a partir de uma classe. Quando você cria uma classe, ela serve como um modelo para criar objetos. Esses objetos são chamados de instâncias dessa classe. Exemplo: 
+
+class Carro3 {
+    public $marca;
+    public $modelo;
+    
+    public function __construct($marca, $modelo) {
+        $this->marca = $marca;
+        $this->modelo = $modelo;
+    }
+    
+    public function detalhes() {
+        return "Marca: $this->marca, Modelo: $this->modelo";
+    }
+}
+// Criando uma instância == objeto da classe Carro
+$meuCarro = new Carro("Toyota", "Corolla");
+echo $meuCarro->detalhes(); // Saída: Marca: Toyota, Modelo: Corolla
+// Criando outra instância da classe Carro
+$outroCarro = new Carro("Honda", "Civic");
+echo $outroCarro->detalhes(); // Saída: Marca: Honda, Modelo: Civic
+
+
 // Construtor: é um método especial que é chamado automaticamente quando um objeto de uma classe é criado. Ele é usado para inicializar propriedades do objeto. Exemplo: 
 class Carro2 {
     private $marca2;
