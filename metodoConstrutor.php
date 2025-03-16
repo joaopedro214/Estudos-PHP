@@ -44,11 +44,11 @@ echo $pessoa->apresentar(); // Imprime "Olá, meu nome é Maria e eu tenho 30 an
 class Filme {
     // Não precisa por aqui.
     // Fica direto passado como parâmetro, desse modo transformando-se em uma propriedade.
-    // E as propridades sempre devem ser tipadas, pois por padrão o valor é null.
+    // E as propriedades sempre devem ser tipadas, pois por padrão o valor é null.
     public function __construct(private string $nome, private int $anoLancamento, private string $genero, private float $notas){
         //E nem aqui.
     }
-
+    // Método get
     public function getanoLancamento(): int {
         return $this->anoLancamento;
     }

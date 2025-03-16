@@ -1,16 +1,4 @@
 <?php
-// Namespace: permite organizar classes, interfaces, funções e constantes em um espaço de nomes. Isso evita conflitos de nomes entre diferentes partes de um programa. Exemplo:
-// Antes estava depois de "interface". Tive que por aqui por primeiro devido a regra dela ter que ser insrida antes de tudo.
-namespace MeuProjeto;
-
-class Exemplo {
-    public function digaOla() {
-        echo "Olá do MeuProjeto!";
-    }
-}
-?>
-
-<?php
 
 // Parâmetro: é uma variável utilizada em uma função ou método.
 
@@ -121,19 +109,6 @@ class Cachorro implements Animal {
 ?>
 
 <?php
-// Trait: é um mecanismo que permite reutilizar código em várias classes. Ele é similar a uma classe, mas não pode ser instanciado diretamente. As traits permitem adicionar métodos a classes sem usar herança. Exemplo:
-trait Saudacao {
-    public function digaOla() {
-        echo "Olá!";
-    }
-}
-
-class Usuario {
-    use Saudacao;
-}
-
-$usuario = new Usuario();
-$usuario->digaOla();
 
 // Constante é uma variável cujo valor não pode ser alterado depois de definido. Palavra-chave const.
 
